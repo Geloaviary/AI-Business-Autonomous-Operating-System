@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-base-950 text-ink antialiased;
+  }
+  ::selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-base-850 border border-base-700 rounded-xl2 shadow-panel;
+  }
+  .panel-title {
+    @apply text-[11px] font-semibold uppercase tracking-widest text-ink-muted mb-3;
+  }
+  .badge {
+    @apply text-[10.5px] font-semibold px-2 py-0.5 rounded-full tracking-wide;
+  }
+  .badge-good { @apply bg-good-soft text-good; }
+  .badge-warn { @apply bg-warn-soft text-warn; }
+  .badge-bad { @apply bg-bad-soft text-bad; }
+  .badge-accent { @apply bg-accent-soft text-accent; }
+
+  .pill {
+    @apply text-[11px] bg-base-800 border border-base-700 rounded-full px-2.5 py-1 text-ink-muted;
+  }
+
+  .nav-link {
+    @apply flex items-center gap-2.5 px-3 py-2 rounded-lg text-[13px] text-ink-muted hover:text-ink hover:bg-base-800 transition-colors;
+  }
+  .nav-link.active {
+    @apply text-ink bg-accent-soft;
+  }
+
+  .input-field {
+    @apply w-full bg-base-800 border border-base-700 rounded-lg px-3.5 py-2.5 text-[13px] text-ink placeholder:text-ink-faint focus:outline-none focus:ring-1 focus:ring-accent;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-br from-accent to-accent-violet text-white font-semibold text-[13px] px-5 py-2.5 rounded-lg disabled:opacity-40 disabled:cursor-default transition-opacity hover:opacity-90;
+  }
+}
