@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BAOS Engineering Contract",
+  "type": "object",
+  "required": ["businessObjective", "requestedBy"],
+  "properties": {
+    "businessObjective": { "type": "string", "minLength": 1 },
+    "requestedBy": { "type": "string", "minLength": 1 },
+    "capabilities": { "type": "array", "items": { "type": "string" } },
+    "constraints": { "type": "object" },
+    "targetDepartmentName": { "type": "string" },
+    "acceptanceCriteria": { "type": "array", "items": { "type": "string" } }
+  }
+}

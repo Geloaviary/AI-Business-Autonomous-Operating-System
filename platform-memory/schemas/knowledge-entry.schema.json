@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Platform Memory Knowledge Entry",
+  "type": "object",
+  "required": ["category", "departmentName", "certificateId", "summary", "committedAt"],
+  "properties": {
+    "category": { "type": "string", "description": "One of constants.KNOWLEDGE_CATEGORY" },
+    "departmentName": { "type": "string" },
+    "certificateId": { "type": "string" },
+    "artifactId": { "type": "string" },
+    "summary": { "type": "string" },
+    "committedAt": { "type": "string", "format": "date-time" }
+  }
+}

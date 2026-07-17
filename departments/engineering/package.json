@@ -1,0 +1,16 @@
+{
+  "name": "@baos/engineering",
+  "version": "0.1.0",
+  "description": "BAOS Engineering Department — the constitutional reference implementation. Builds every future department of the Business Autonomous Operating System.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js",
+    "demo": "node tests/demo-run.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["baos", "autonomous", "engineering", "ai-department"],
+  "license": "UNLICENSED"
+}

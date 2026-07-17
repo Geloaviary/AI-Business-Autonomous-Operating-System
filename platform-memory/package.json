@@ -1,0 +1,10 @@
+{
+  "name": "@baos/platform-memory",
+  "version": "0.1.0",
+  "description": "BAOS Platform Memory — the institutional brain, single source of truth across every department.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  }
+}

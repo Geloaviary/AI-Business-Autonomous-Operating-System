@@ -1,0 +1,10 @@
+{
+  "name": "@baos/quality-assurance-director",
+  "version": "0.1.0",
+  "description": "BAOS Quality Assurance Director — the constitutional guardian, standalone department.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  }
+}
